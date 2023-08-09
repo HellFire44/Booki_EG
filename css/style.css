@@ -3,29 +3,40 @@
     font-family: 'Raleway', sans-serif;
 }
 
-/*⏬ AJOUT PERSO ⏬*/
-a {
-    color: #242424;
-    text-decoration: none;
-}
-nav {
+
+/*⏬ HEADER | LOGO | NAV BAR ⏬*/
+header {
+    margin: auto;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-}
-nav a {
-    margin-left: 30px;
+    align-items: center;
 }
 
-a:hover {
-    text-decoration: overline;
+.logo-booki {
+    width: 100px;
+    margin-top: 5px;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.menu-nav a {
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-nav a:hover {
+    border-top: 2px solid #0065FC;
     color: #0065FC;
+    padding-top: 28px;
 }
-header, footer {
-    background-color: white;
-    padding: 20px 50px;
-}
+/*⏫ HEADER | LOGO | NAV BAR ⏫*/
+
+/*⏬ BARRE DE RECHERCHE ⏬*/
 .form-research {
     display: flex;
     align-items: center;
@@ -40,8 +51,10 @@ header, footer {
   }
   
   .fa-location-dot {
+    
     font-size: 20px;
     background-color: #f2f2f2;
+    color: black !important;
     padding: 9px;
     border-radius: 10px 0px 0px 10px;
   }
@@ -66,6 +79,14 @@ header, footer {
     border-radius: 5px;
     cursor: pointer;
   }
+  ::placeholder {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+  }
+/*⏫ BARRE DE RECHERCHE ⏫*/
+
+/*⏬ FILTRES ⏬*/
 
   .container {
     display: flex;
@@ -79,10 +100,86 @@ header, footer {
   .filter:hover {
     background-color: #1c81bc76;
     border: 1px #777777 solid;
-
+    cursor: pointer;
   }
-   
-/*⏫ AJOUT PERSO ⏫ */
+
+/*⏫ FILTRES ⏫*/
+
+/*⏬ CARD HÉBERGEMENT À MARSEILLE ⏬*/
+
+.conteneur-rooms {
+    display: grid;
+}
+.rooms-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+.room {
+    flex: 0 0 calc(33.33% - 10px);
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.room img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+.room img.landscape {
+    width: 260px;
+    height: 174px;
+}
+.room-title {
+    font-size: 16px;
+}
+
+/*⏫ CARD HÉBERGEMENT À MARSEILLE ⏫*/
+
+/*⏬ ACTIVITÉS À MARSEILLE ⏬*/
+
+.activitie-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activitie-card {
+    display: flex;
+}
+
+.activitie-card .card {
+    
+    width: 30%; 
+    margin: 0 10px; 
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.activitie-card img {
+    width: 297.5px;
+    height: 439px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.activitie-card .card-template {
+    width: 30%;
+}
+
+.activitie-card .card-template-title {
+    margin: 10px 0;
+}
+
+
+
+/*⏫ ACTIVITÉS À MARSEILLE ⏫*/
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
