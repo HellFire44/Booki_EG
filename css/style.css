@@ -180,6 +180,26 @@ header {
 
 
 /*⏫ ACTIVITÉS À MARSEILLE ⏫*/
+
+/* ⏬ FOOTER ⏬ */
+.footer-template {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alignez les éléments au centre verticalement */
+    background-color: var(--main-bg-color);
+    padding: 20px; /* Ajoutez un peu de rembourrage pour l'espace intérieur */
+}
+
+.footer-section {
+    display: flex;
+    gap: 300px; /* Ajoutez un espace plus grand entre les sections */
+}
+
+/* ⏫ FOOTER ⏫ */
+
+
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -331,9 +351,106 @@ body {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activitie-card img {
+        width: 193.5px;
+        height: 200px;
+    }
+
+    .footer-section {
+        gap: 148px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .menu-nav {
+        justify-content: center;
+    }
+
+    .section-research {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .filter {
+        margin: 4px;
+        border: 1px #d1d1d1 solid;
+        padding: 18px 14px;
+    }
+    .informations {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .fa-circle-info {
+        position: absolute;
+        top: 408px; left: 145px;
+    }
+
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .populaires-cards .card {
+        width: 80%;
+    }
+
+    .hebergements {
+        background-color: #00000000 !important;
+    }
+
+    .rooms-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .room img.landscape {
+        width: 570px;
+        height: 369px;
+    }
+
+    .activitie-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .activitie-card img {
+        width: 400px;
+        height: 170px;
+    }
+
+    .footer-template {
+        margin: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+    }
     /* ... */
 }
+
