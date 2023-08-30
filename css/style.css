@@ -406,6 +406,10 @@ body {
         flex-direction: column-reverse;
 
     }
+    .hebergements-and-populaires section {
+        padding: 128px;
+    }
+
 
     .populaires-cards {
         display: flex;
@@ -428,11 +432,16 @@ body {
         flex-direction: column;
     }
 
-    .room img.landscape {
-        width: 570px;
-        height: 369px;
+    .room-image {
+        padding: 2%;
+        border-radius: 20px 20px 0px 0px;
+        width: 96%;
+        height: 135px; 
+        object-fit: cover;
     }
-
+    .activitie {
+        padding: 48px;
+    }
     .activitie-card {
         display: flex;
         flex-direction: column;
