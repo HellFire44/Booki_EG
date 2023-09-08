@@ -219,7 +219,6 @@ body {
 }
 
 .main-container {
-    width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
@@ -324,6 +323,7 @@ body {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -366,7 +366,10 @@ body {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
+
+    
+
 
     header {
         flex-direction: column;
@@ -375,7 +378,13 @@ body {
     .menu-nav {
         justify-content: center;
     }
-
+    
+    .menu-nav a:hover {
+        border-top: 0px;
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
+        padding-top: 28px;
+    }
     .section-research {
         display: flex;
         align-items: center;
@@ -383,13 +392,38 @@ body {
         flex-direction: column;
     }
 
+    .section-research h2 {
+        margin-left: 140px;
+        margin-right: 147px;
+        font-size: 17px;
+    }
+    .section-research p {
+        margin-right: 24px;
+        font-size: 13px;
+    }
+    
+    input[type="search"] {
+        font-size: 16px;
+    }
+
+    .container h3 {
+        margin-right: 236px;
+    }
+    .container {
+        margin-left: 94px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
     .filter {
         display: flex;
         margin: 2px;
         border: 1px #d1d1d1 solid;
-        padding: 18px 14px;
     }
     .informations {
+        padding-left: 85px;
+        padding-right: 85px;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -398,7 +432,7 @@ body {
 
     .fa-circle-info {
         position: absolute;
-        top: 391px; left: 145px;
+        top: 499px; left: 5px;
     }
 
     .hebergements-and-populaires {
@@ -407,7 +441,9 @@ body {
 
     }
     .hebergements-and-populaires section {
-        padding: 128px;
+        padding-top: 28px;
+        padding-left: 71px;
+        padding-right: 87px;
     }
 
 
@@ -442,13 +478,14 @@ body {
     .activitie {
         padding: 48px;
     }
+
     .activitie-card {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
     .activitie-card img {
-        width: 400px;
+        width: 300px;
         height: 170px;
     }
 
